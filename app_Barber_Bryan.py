@@ -27,39 +27,44 @@ st.markdown("""
     [data-testid="stSidebar"] {
         background-color: #1e3a5f;
     }
-    [data-testid="stSidebar"] .css-1d391kg {
-        color: white;
+    
+    /* Make sidebar text white */
+    [data-testid="stSidebar"] * {
+        color: white !important;
     }
     
-    /* Main content area */
+    /* Main content area - keep it light */
     .main {
-        background-color: #f5f7fa;
+        background-color: #ffffff;
     }
     
-    /* Custom info boxes */
-    .info-box {
-        background-color: #e8f4f8;
-        border-left: 4px solid #2196F3;
-        padding: 15px;
-        border-radius: 5px;
-        margin: 10px 0;
+    /* Ensure all text is dark and readable */
+    .main * {
+        color: #1f1f1f;
     }
     
-    /* Success message styling */
-    .success-box {
-        background-color: #e8f5e9;
-        border-left: 4px solid #4CAF50;
-        padding: 15px;
-        border-radius: 5px;
-        margin: 10px 0;
+    /* Headers should be dark blue */
+    h1, h2, h3, h4 {
+        color: #1e3a5f !important;
     }
     
-    /* Custom button hover effect */
+    /* Success/info boxes */
+    .stSuccess {
+        background-color: #d4edda;
+        border-left: 4px solid #28a745;
+    }
+    
+    .stInfo {
+        background-color: #d1ecf1;
+        border-left: 4px solid #17a2b8;
+    }
+    
+    /* Button styling */
     .stButton>button {
         transition: all 0.3s ease;
     }
     .stButton>button:hover {
-        transform: scale(1.05);
+        transform: scale(1.02);
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     </style>
