@@ -106,7 +106,7 @@ if page == "HW Summary":
     st.markdown("---")
 
     # Header with student name
-    st.header("This HW was submitted by **Bryan Barber** of ITOM6265")
+    st.header("This HW was submitted by **Bryan Barber** for Database Design 6265")
 
     # Using columns for better layout
     col1, col2 = st.columns([1, 1])
